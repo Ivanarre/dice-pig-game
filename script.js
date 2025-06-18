@@ -74,12 +74,13 @@ btnHold.addEventListener('click', function () {
       // Finisth the game
       playing = false;
       diceEle.classList.add('hidden');
+
       document
         .querySelector(`.player--${activePlayer}`)
-        .classList.add('player-winner');
+        .classList.add('player--winner');
       document
         .querySelector(`.player--${activePlayer}`)
-        .classList.remove('player-winner');
+        .classList.remove('player--winner');
     } else {
       // Switch to the next player
       switchPlayer();
